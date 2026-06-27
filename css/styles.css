@@ -1,68 +1,51 @@
-header{
-    text-align: center;
-    /* border: blue 1px solid; */
-}
-
-header p {
-    font-size: 1.075rem;
-}
-
-#main{
-    max-width: 35rem;
-    /* border: green 1px solid; */
-    padding-left: 10px;
-}
-
-#main p {
-    font-size: 1.075rem;
-}
-
-main {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+header {
+    margin-bottom: 50px;
 }
 
 body {
-  font-family: "JetBrains Mono", Consolas, monospace;
-  max-width: 50rem;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: black;
-  color: white;
+    font-family: "JetBrains Mono", Consolas, monospace;
+    /* max-width: 50rem; */
+    /* margin-left: 80px; */
+    /* padding: 20px; */
+    background-color: black;
+    color: white;
+    margin: 0;
 }
 
-/* nav */
-
-nav ul {
-  display: block;
-  gap: 10px;
-  list-style: none;
-  padding: 0;
-  margin-left: 10px;
-  font-size: 1.075rem;
+.layout {
+    display: flex;
+    min-height: 100vh;
 }
 
-nav ul li label:hover{
+main {
+  justify-content: center;
+  padding: 40px;
+}
+
+/* MENU */
+
+#menu {
+    width: 220px;
+    padding: 40px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+#menu ul {
+    display: block;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+#menu ul li span:hover {
     text-decoration: underline;
 }
 
 a {
     text-decoration: none;
     color: white;
-}
-
-article {
-  margin-bottom: 20px;
-}
-
-#latest-thought {
-    border: white 1px solid;
-}
-
-#latest-thought h3 {
-    margin-left: 10px;
-}
-
-#latest-thought article {
-    margin-left: 10px;
 }
